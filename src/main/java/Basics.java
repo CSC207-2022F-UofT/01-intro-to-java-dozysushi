@@ -146,6 +146,11 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
+        String[] result = to_split.split(" ");
+
+        for (String str : result) {
+            ret.append(str.charAt(0));
+        }
 
         return ret.toString();
     }
